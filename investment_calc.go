@@ -5,7 +5,7 @@ import (
 	"math"
 )
 
-func main_BK() {
+func main() {
 	const INFLATION_RATE float64 = 3.2
 	var investmentAmount float64 = 10000.00
 	var expectedReturn float64 = 5.5
@@ -31,6 +31,6 @@ func main_BK() {
 	fmt.Println("Investment Amount: $", investmentAmount)
 	fmt.Println("Expected Return: ", expectedReturn, "%")
 	fmt.Println("Years: ", years)
-	fmt.Println("Future Value: $", futureValue)
-	fmt.Println("Real Value: $", math.Round(futureRealValue))
+	fmt.Printf("Future Value: %.2f\n", futureValue)
+	fmt.Printf("Real Value: %.2f\n", futureRealValue)
 }
